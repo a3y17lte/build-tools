@@ -6,7 +6,7 @@ device=a3y17lte
 common=exynos7870-common
 device_path=device/samsung
 manifest=https://github.com/$device/manifest
-prompt=Pick an option :
+prompt="Pick an option :"
 
 title=Want you to sync
 options=(yes no)
