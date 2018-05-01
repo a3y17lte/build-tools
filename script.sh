@@ -22,8 +22,6 @@ select option in ${options[@]};
         repo sync --force-sync
         rm -rf $device_path/$device/sepolicy $device_path/$common/sepolicy/*
         git clone https://github.com/$device/sepolicy $device_path/$device/sepolicy
-        rm -rf $device_path/$common/ramdisk
-        git clone https://github.com/$device/ramdisk $device_path/$common/ramdisk
         echo "You can now build for your $device" ;break;;
         2 ) echo Goodbye!;sleep 2 && exit;;
     *) echo $check;continue;;
